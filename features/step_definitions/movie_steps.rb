@@ -18,7 +18,6 @@
        break
      end
    end  
-#   assert result
    expect(result).to be_truthy
  end
 
@@ -28,11 +27,7 @@
  end
 
 Then /^(?:|I )should see "([^"]*)"$/ do |text|
-  if page.respond_to? :should
-    page.should have_content(text)
-  else
-    assert page.has_content?(text)
-  end
+    expect(page).to have_content(text)
 end
 
  When /^I have edited the movie "(.*?)" to change the rating to "(.*?)"$/ do |movie, rating|
