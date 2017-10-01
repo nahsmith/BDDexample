@@ -1,9 +1,8 @@
 =begin rdoc
 
 This directory contains the basic Rotten Potatoes rails app that we will use
-and enhance througout the semester.
-
-You can copy this directory to your Cloud9 wokspace by first forking the SELT/RottenPotatoes
+to illustrate Behavior Driven Development and Cubumber/Capybara testing.
+You can copy this directory to your Cloud9 wokspace by first forking the SELT/BDDexample
 GitHub repo to your GitHub account and then cloning it to your Cloud9 workspace.  You do NOT
 need to make your GitHub repo private.
 
@@ -13,8 +12,6 @@ and set up and initialize the database  (You only need to do this before running
 the app for the first time:
 
 bundle install
-
-rake db:create
 
 rake db:migrate
 
@@ -34,15 +31,6 @@ After the server has started, you should see a small window that says:
 
 You can either click on the URL to open a small browser within Cloud9, or
 type the supplied URL into your favorite browser.
-
-In either case, the browser should be directed to a rails "Welcome Aboard" page.
-Add:
-
-"/movies"  (without the quotes) 
-
-to the end of the URL and the browser should
-display the Rotten Potatoes homepage--i.e. the one that shows a table of all the
-movies.
 
 When you are done using the app, you can kill the rails server by typing:
 
